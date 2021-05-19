@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Никита Щурбин](https://up.htmlacademy.ru/htmlcss/31/user/1744101).
-* Наставник:[Алексей Локтев] (https://htmlacademy.ru/profile/arloktev)
+* Наставник: [Алексей Локтев](https://htmlacademy.ru/profile/arloktev)
 
 ---
 

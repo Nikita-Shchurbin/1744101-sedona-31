@@ -27,10 +27,12 @@
         <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
       </section>
       <section>
-        <li>
-          <h2>Настоящий городок</h2>
-          <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
-        </li>
+        <ul>
+          <li>
+            <h2>Настоящий городок</h2>
+            <p>Седона — не аттракцион для туристов, там течёт своя жизнь</p>
+          </li>
+        </ul>
 
         <img src="https://via.placeholder.com/800x256" alt="" />
       </section>
@@ -87,28 +89,76 @@
 
         <!--Здесь будет карта!-->
       </section>
-    </main>
-    <footer>
-      <p>
-        #visitSEDONA
-        <a href="tel+78005558628">+78005558628</a>
-      </p>
-      <ul>
-        <li>
-          <a href="#">Twitter</a>
-        </li>
-        <li>
-          <a href="#">facebook</a>
-        </li>
-        <li>
-          <a href="#">YouTube</a>
-        </li>
-      </ul>
+      <footer>
+        <p>
+          #visitSEDONA
+          <a href="tel+78005558628">+78005558628</a>
+        </p>
+        <ul>
+          <li>
+            <a href="#">Twitter</a>
+          </li>
+          <li>
+            <a href="#">facebook</a>
+          </li>
+          <li>
+            <a href="#">YouTube</a>
+          </li>
+        </ul>
 
-      <p>
-        Website by
-        <a href="https://htmlacademy.ru">.HTML academy </a>
-      </p>
-    </footer>
+        <p>
+          Website by
+          <a href="https://htmlacademy.ru">.HTML academy </a>
+        </p>
+      </footer>
+      <section>
+        <h2>Поиск гостиницы в Седоне</h2>
+        <form action="https://echo.htmlacademy.ru/" method="post">
+          <p>
+            <label for="appointment-arrival-date">Дата заезда:</label>
+            <input
+              id="appointment-arrival-date"
+              type="text"
+              name="arrival-date"
+              placeholder="24 апреля 2017"
+            />
+          </p>
+          <p>
+            <label for="appointment-departure-date">Дата выезда:</label>
+            <input
+              id="appointment-departure-date"
+              type="text"
+              name="departure-date"
+              placeholder="04 июля 2017"
+            />
+          </p>
+          <p>
+            <label for="appointment-adult">взрослые</label>
+            <button type="button">-</button>
+            <input
+              id="appointment-adult"
+              type="text"
+              name="adult"
+              placeholder="2"
+            />
+            <button type="button">+</button>
+           
+          </p>
+          <p>
+            <label for="appointment-children">дети</label>
+            <button type="button">-</button>
+            <input
+              id="appointment-children"
+              type="text"
+              name="children"
+              placeholder="0"
+            />
+            
+            <button type="button">+</button>
+          </p>
+          <button type="submit">Найти</button>
+        </form>
+      </section>
+    </main>
   </body>
 </html>

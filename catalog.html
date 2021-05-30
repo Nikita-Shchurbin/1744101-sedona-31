@@ -9,8 +9,8 @@
     <link rel="manifest" href="manifest.webmanifest" />
   </head>
   <body>
-    <header>
-      <nav>
+    <header class="main-header">
+      <nav class="main-menu">
         <a href="index.html">
           <img src="img/logo.svg" width="138" height="70" alt="logo" />
         </a>
@@ -24,10 +24,10 @@
     </header>
     <main>
       <form action="https://echo.htmlacademy.ru/">
-        <fieldset>
+        <fieldset class="infrastructure">
           <legend>Инфраструктура:</legend>
-          <ul>
-            <li>
+          <ul class="infrastructure-list">
+            <li class="infrastructure-item">
               <input
                 type="checkbox"
                 name="pool-field"
@@ -36,28 +36,28 @@
               />
               <label for="pool-field">Бассейн</label>
             </li>
-            <li>
+            <li class="infrastructure-item">
               <input type="checkbox" name="parking" id="parking" />
               <label for="parking">Парковка</label>
             </li>
-            <li>
+            <li class="infrastructure-item">
               <input type="checkbox" name="Wi-Fi" id="Wi-Fi" />
               <label for="Wi-Fi">Wi-Fi</label>
             </li>
           </ul>
         </fieldset>
-        <fieldset>
+        <fieldset class="housing">
           <legend>Тип жилья:</legend>
-          <ul>
-            <li>
+          <ul class="housing-list">
+            <li class="housing-item">
               <input type="checkbox" name="hotel" id="hotel" checked />
               <label for="hotel">Гостиница</label>
             </li>
-            <li>
+            <li class="housing-item">
               <input type="checkbox" name="motel" id="motel" checked />
               <label for="motel">Мотель</label>
             </li>
-            <li>
+            <li class="housing-item">
               <input
                 type="checkbox"
                 name="Апартаменты"
@@ -68,9 +68,9 @@
             </li>
           </ul>
         </fieldset>
-        <div>
+        <div class="offer">
           <h3>Стоимость в сутки, ₽</h3>
-          <div>
+          <div class="offer">
             <input type="number" name="min" placeholder="от 0" />
             <input type="number" name="max" placeholder="до 3000" />
           </div>
@@ -78,9 +78,9 @@
         </div>
         <button type="submit">Показать</button>
       </form>
-      <div>
-        <ul>
-          <li>
+      <div class="offer">
+        <ul class="offer-list">
+          <li class="offer-item">
             <h2>Найдено: 3</h2>
             <p>Сортировка:</p>
             <a>По цене</a>
@@ -89,9 +89,9 @@
           </li>
         </ul>
       </div>
-      <section>
-        <ul>
-          <li>
+      <section class="pic">
+        <ul class="pic-list">
+          <li class="pic-item">
             <a
               ><img
                 src="img/amararesort.jpg"
@@ -151,13 +151,13 @@
         </ul>
       </section>
     </main>
-    <footer>
+    <footer class="container">
       <p>
         #visitSEDONA
         <a href="tel+78005558628">+78005558628</a>
       </p>
-      <ul>
-        <li>
+      <ul class="container-list">
+        <li class="container-item">
           <a href="#"
             ><svg
               width="17"
@@ -173,7 +173,7 @@
             </svg>
           </a>
         </li>
-        <li>
+        <li class="container-item">
           <a href="#">
             <svg
               width="12"
@@ -189,7 +189,7 @@
             </svg>
           </a>
         </li>
-        <li>
+        <li class="container-item">
           <a href="#">
             <svg
               width="20"

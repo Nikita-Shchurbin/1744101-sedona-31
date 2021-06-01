@@ -14,15 +14,12 @@ body {
   margin: 0;
   padding: 0;
   font-family: "PT Sans", sans-serif;
-  font-size: 21px;
-  line-height: 26px;
-  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
   color: var(--basic-black);
   text-transform: uppercase;
   background-color: var(--basic-extra-white);
-  background-image: url("img/backgroundsedona.jpg");
-  background-position: center;
-  background-repeat: no-repeat;
   list-style: none;
 }
 a {
@@ -32,7 +29,6 @@ a {
   font-size: 14px;
   line-height: 26px;
   color: var(--basic-black);
-  background-color: transparent;
 }
 .site-navigation {
   list-style: none;
@@ -45,10 +41,11 @@ a {
 .country h2 {
   font-size: 21px;
   line-height: 26px;
+  font-weight: 700;
 }
 .country p {
   font-size: 14px;
-  line-height: 21px;
+  line-height: 26px;
 }
 
 .city {
@@ -58,6 +55,7 @@ a {
 .city h2 {
   font-size: 21px;
   line-height: 21px;
+  font-weight: 700;
 }
 .city p {
   font-size: 14px;
@@ -68,8 +66,10 @@ a {
   text-align: center;
 }
 .features h3 {
+  list-style: none;
   font-size: 21px;
   line-height: 21px;
+  font-weight: 700;
 }
 .features p {
   list-style: none;
@@ -85,6 +85,7 @@ a {
 .story h3 {
   font-size: 21px;
   line-height: 21px;
+  font-weight: 700;
 }
 .story p {
   font-size: 14px;
@@ -104,8 +105,23 @@ a {
   width: 568px;
   height: 86px;
 }
+.hashtag{
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
+.phone{
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+}
 .socials {
   list-style: none;
   font-size: 21px;
   line-height: 26px;
-  background-color: var(--basic-white);}
+  background-color: var(--basic-white);
+}
+.copyright {
+  font-size: 14px;
+  line-height: 26px;
+}

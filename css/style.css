@@ -4,7 +4,7 @@
   --basic-black: #000000;
   --basic-white: #ffffff;
   --basic-blue: #81b3d2;
-  --basic-extra-grey: #888888;
+  --basic-extra-white: #f2f2f2;
   --basic-grey: #766357;
   --basic-neutral: #eeeeee;
 }
@@ -19,10 +19,11 @@ body {
   font-weight: 700;
   color: var(--basic-black);
   text-transform: uppercase;
-  background-color: var(--basic-extra-grey);
+  background-color: var(--basic-extra-white);
   background-image: url("img/backgroundsedona.jpg");
   background-position: center;
   background-repeat: no-repeat;
+  list-style: none;
 }
 a {
   text-decoration: none;
@@ -38,7 +39,7 @@ a {
 }
 
 .country {
-  list-style: none;
+  list-style-type: none;
   text-align: center;
 }
 .country h2 {
@@ -53,12 +54,6 @@ a {
 .city {
   list-style: none;
   text-align: left;
-  background-color: var(--basic-blue);
-  width: 400px;
-  margin: 0px;
-  font-size: 14px;
-  line-height: 21px;
-  color: var(--basic-white);
 }
 .city h2 {
   font-size: 21px;
@@ -71,57 +66,28 @@ a {
 .features {
   list-style: none;
   text-align: center;
-  background-color: var(--basic-white);
 }
 .features h3 {
   font-size: 21px;
   line-height: 21px;
 }
 .features p {
+  list-style: none;
   font-size: 14px;
   line-height: 21px;
 }
-.feature-item-home {
+.story-list {
   list-style: none;
-  text-align: left;
-  font-size: 21px;
-  line-height: 21px;
 }
-.feature-item-eat {
-  list-style: none;
+.story-item {
   text-align: center;
+}
+.story h3 {
   font-size: 21px;
   line-height: 21px;
 }
-.feature-item-souvenirs {
-  list-style: none;
-  text-align: right;
-  font-size: 21px;
-  line-height: 21px;
-}
-.feature-item-devil {
-  list-style: none;
-  text-align: right;
-  background-color: var(--basic-blue);
-  color: var(--basic-white);
-}
-.features-list-attractions {
-  list-style: none;
-  text-align: left;
-  background-color: var(--basic-neutral);
-  font-size: 21px;
-  line-height: 21px;
-}
-.feature-item-road {
-  list-style: none;
-  text-align: center;
-  font-size: 21px;
-  line-height: 21px;
-}
-.feature-item-tourists {
-  list-style: none;
-  text-align: right;
-  font-size: 21px;
+.story p {
+  font-size: 14px;
   line-height: 21px;
 }
 .offer {
@@ -132,13 +98,14 @@ a {
 }
 .button {
   text-align: center;
+  background-color: var(--basic-grey);
+  font-size: 21px;
+  line-height: 26px;
+  width: 568px;
+  height: 86px;
 }
 .socials {
   list-style: none;
   font-size: 21px;
   line-height: 26px;
-  background-color: var(--basic-white);
-}
-.social-item {
-  text-align: center;
-}
+  background-color: var(--basic-white);}

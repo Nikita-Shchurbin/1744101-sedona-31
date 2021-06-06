@@ -10,6 +10,10 @@
   --basic-neutral: #eeeeee;
   --basic-extra-brown: #604e43;
   --basic-brown: #503e33;
+  --basic-extra-grey:#666666;
+  --basic-light-blue:#669EC0;
+  --basic-extra-blue:#5496BD;
+
 }
 
 body {
@@ -37,8 +41,17 @@ a {
 .main-navigation {
   color: var(--basic-black);
 }
-.site-navigation {
+.site-navigation{
   list-style: none;
+}
+.site-navigation a:hover {
+color: var(--basic-blue);
+}
+.site-navigation a:focus {
+color:var(--basic-black);
+}
+.site-navigation a:active {
+color: var(--basic-brown-light);
 }
 
 .country {
@@ -69,7 +82,7 @@ a {
 .features {
   text-align: center;
 }
-.features-list{
+.features-list {
   list-style-type: none;
 }
 .features h3 {
@@ -138,85 +151,100 @@ a {
   font-size: 14px;
   line-height: 26px;
 }
-.infrastructure {
+.life {
   font-size: 16px;
   line-height: 21px;
   font-weight: 700;
 }
-.infrastructure-item {
+.life-item {
   list-style: none;
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
 }
-.housing {
+.infrastructure{
   font-size: 16px;
   line-height: 21px;
   font-weight: 700;
 }
-.housing-item {
-  list-style: none;
+.pool{
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
 }
-.offer {
+.price {
   font-size: 16px;
   line-height: 21px;
   font-weight: 700;
 }
-.button-offer {
+.button-price {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
   text-align: center;
+  background-color: no-repeat;
 }
-.offer h2 {
+.button-price:hover{
+  background-color: var(--basic-white);
+}
+.price-list {
+  list-style: none;
+}
+}
+.price h2 {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
 }
-.offer p {
+.price p {
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
 }
-.offer a {
+.price a {
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
   color: #81b3d2;
 }
-.pic {
+.product-list {
   list-style: none;
 }
-.pic h3 {
+.product h3 {
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
 }
-.pic p {
+.product p {
   font-size: 14px;
   line-height: 21px;
   font-weight: 400;
-  color: #333333;
 }
-
-.button-primary {
+.rating {
+  font-size: 14px;
+  line-height: 21px;
+  font-weight: 400;
+  text-align: center;
+  background-color: #f2f2f2;
+  color: #666666;
+  width: 110px;
+  height: 27px
+}
+.button {
   font-size: 14px;
   line-height: 21px;
   font-weight: 700;
   color: #ffffff;
+}
+.button-primary {
   background-color: #81b3d2;
-  width: 110;
-  height: 27;
 }
 .button-secondary {
-  font-size: 14px;
-  line-height: 21px;
-  font-weight: 700;
-  color: #ffffff;
   background-color: #766357;
-  width: 142;
-  height: 27;
+}
+.button-primary:hover{
+  background-color: var(--basic-light-blue);
+}
+.button-primary:focus .button-primary:active{
+  background-color: var(--basic-extra-blue);
 }

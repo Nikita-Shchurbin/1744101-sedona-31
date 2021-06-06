@@ -10,13 +10,13 @@
     <link href="css/normalize.css" rel="stylesheet" />
     <link href="css/style.css" rel="stylesheet" />
   </head>
-  <body>
+  <body class="page-body">
     <header class="main-header">
-      <nav class="main-menu">
-        <a href="index.html">
+      <nav class="main-navigation">
+        <a class="main-header-logo" href="index.html">
           <img src="img/logo.svg" width="138" height="70" alt="logo" />
         </a>
-        <ul>
+        <ul class="site-navigation">
           <li><a href="#">Информация</a></li>
           <li><a href="#">Фото и видео</a></li>
           <li><a href="#">Карта штата</a></li>
@@ -26,40 +26,40 @@
     </header>
     <main>
       <form action="https://echo.htmlacademy.ru/">
-        <fieldset class="infrastructure">
-          <legend>Инфраструктура:</legend>
-          <ul class="infrastructure-list">
-            <li class="infrastructure-item">
+        <fieldset class="life">
+          <legend class="infrastructure">Инфраструктура:</legend>
+          <ul class="life-list">
+            <li class="life-item">
               <input
                 type="checkbox"
                 name="pool-field"
                 id="pool-field"
                 checked
               />
-              <label for="pool-field">Бассейн</label>
+              <label class="pool" for="pool-field">Бассейн</label>
             </li>
-            <li class="infrastructure-item">
+            <li class="life-item">
               <input type="checkbox" name="parking" id="parking" />
               <label for="parking">Парковка</label>
             </li>
-            <li class="infrastructure-item">
+            <li class="life-item">
               <input type="checkbox" name="Wi-Fi" id="Wi-Fi" />
               <label for="Wi-Fi">Wi-Fi</label>
             </li>
           </ul>
         </fieldset>
-        <fieldset class="housing">
+        <fieldset class="life">
           <legend>Тип жилья:</legend>
-          <ul class="housing-list">
-            <li class="housing-item">
+          <ul class="life-list">
+            <li class="life-item">
               <input type="checkbox" name="hotel" id="hotel" checked />
               <label for="hotel">Гостиница</label>
             </li>
-            <li class="housing-item">
+            <li class="life-item">
               <input type="checkbox" name="motel" id="motel" checked />
               <label for="motel">Мотель</label>
             </li>
-            <li class="housing-item">
+            <li class="life-item">
               <input
                 type="checkbox"
                 name="Апартаменты"
@@ -70,19 +70,19 @@
             </li>
           </ul>
         </fieldset>
-        <div class="offer">
+        <div class="price">
           <h3>Стоимость в сутки, ₽</h3>
-          <div class="offer">
+          <div class="price">
             <input type="number" name="min" placeholder="от 0" />
             <input type="number" name="max" placeholder="до 3000" />
           </div>
           <input type="range" id="price" name="price" min="0" max="3000" />
         </div>
-        <button class="button-offer" type="submit">Показать</button>
+        <button class="button-price" type="submit">Показать</button>
       </form>
-      <div class="offer">
-        <ul class="offer-list">
-          <li class="offer-item">
+      <div class="price">
+        <ul class="price-list">
+          <li class="price-item">
             <h2>Найдено: 3</h2>
             <p>Сортировка:</p>
             <a>По цене</a>
@@ -91,9 +91,9 @@
           </li>
         </ul>
       </div>
-      <section class="pic">
-        <ul class="pic-list">
-          <li class="pic-item">
+      <section class="product">
+        <ul class="product-list">
+          <li class="product-item">
             <a
               ><img
                 src="img/amararesort.jpg"
@@ -105,7 +105,7 @@
             <div>
               <p>Гостиница</p>
               <p>От 4000 ₽</p>
-              <p>Рейтинг: 8,5</p>
+              <p class="rating">Рейтинг: 8,5</p>
             </div>
             <div>
               <a class="button-primary">Подробнее</a>
@@ -124,7 +124,7 @@
             <div>
               <p>Мотель</p>
               <p>От 3000 ₽</p>
-              <p>Рейтинг: 8,9</p>
+              <p class="rating">Рейтинг: 8,9</p>
             </div>
             <div>
               <a class="button-primary">Подробнее</a>
@@ -143,7 +143,7 @@
             <div>
               <p>Апартаменты</p>
               <p>От 2000 ₽</p>
-              <p>Рейтинг: 9,2</p>
+              <p class="rating">Рейтинг: 9,2</p>
             </div>
             <div>
               <a class="button-primary">Подробнее</a>
@@ -156,7 +156,7 @@
     <footer class="footer">
       <p class="hashtag">
         #visitSEDONA
-        <a href="tel+78005558628">+78005558628</a>
+        <a class="phone" href="tel:+78005558628">+78005558628</a>
       </p>
       <ul class="socials">
         <li class="socials-item">

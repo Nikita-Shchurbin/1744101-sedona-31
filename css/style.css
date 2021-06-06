@@ -132,14 +132,10 @@ a {
   font-size: 21px;
   line-height: 26px;
   background-color: var(--basic-blue);
-  width: 46;
-  height: 48;
 }
 .copyright {
   font-size: 14px;
   line-height: 26px;
-  width: 115px;
-  height: 34px;
 }
 .infrastructure {
   font-size: 16px;

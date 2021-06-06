@@ -32,6 +32,7 @@ a {
   font-size: 14px;
   line-height: 26px;
   color: var(--basic-black);
+  font-weight: 700;
 }
 .main-navigation {
   color: var(--basic-black);
@@ -41,7 +42,6 @@ a {
 }
 
 .country {
-  list-style-type: none;
   text-align: center;
 }
 .country h2 {
@@ -55,7 +55,6 @@ a {
 }
 
 .city {
-  list-style: none;
   text-align: left;
 }
 .city h2 {
@@ -68,8 +67,10 @@ a {
   line-height: 21px;
 }
 .features {
-  list-style: none;
   text-align: center;
+}
+.features-list{
+  list-style-type: none;
 }
 .features h3 {
   font-size: 21px;
@@ -97,9 +98,9 @@ a {
   line-height: 21px;
 }
 .offer {
-  list-style: none;
   text-align: center;
 }
+
 .button {
   font-size: 21px;
   line-height: 26px;

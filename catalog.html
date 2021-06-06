@@ -7,6 +7,8 @@
     <link rel="icon" href="favicon/icon.svg" type="image/svg+xml" />
     <link rel="apple-touch-icon" href="favicon/180.png" />
     <link rel="manifest" href="manifest.webmanifest" />
+    <link href="css/normalize.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
   </head>
   <body>
     <header class="main-header">
@@ -76,7 +78,7 @@
           </div>
           <input type="range" id="price" name="price" min="0" max="3000" />
         </div>
-        <button type="submit">Показать</button>
+        <button class="button-offer" type="submit">Показать</button>
       </form>
       <div class="offer">
         <ul class="offer-list">
@@ -106,8 +108,8 @@
               <p>Рейтинг: 8,5</p>
             </div>
             <div>
-              <a>Подробнее</a>
-              <a>Забронировать</a>
+              <a class="button-primary">Подробнее</a>
+              <a class="button-secondary">Забронировать</a>
             </div>
           </li>
           <li>
@@ -125,8 +127,8 @@
               <p>Рейтинг: 8,9</p>
             </div>
             <div>
-              <a>Подробнее</a>
-              <a>Забронировать</a>
+              <a class="button-primary">Подробнее</a>
+              <a class="button-secondary">Забронировать</a>
             </div>
           </li>
           <li>
@@ -144,20 +146,20 @@
               <p>Рейтинг: 9,2</p>
             </div>
             <div>
-              <a>Подробнее</a>
-              <a>Забронировать</a>
+              <a class="button-primary">Подробнее</a>
+              <a class="button-secondary">Забронировать</a>
             </div>
           </li>
         </ul>
       </section>
     </main>
-    <footer class="container">
-      <p>
+    <footer class="footer">
+      <p class="hashtag">
         #visitSEDONA
         <a href="tel+78005558628">+78005558628</a>
       </p>
-      <ul class="container-list">
-        <li class="container-item">
+      <ul class="socials">
+        <li class="socials-item">
           <a href="#"
             ><svg
               width="17"
@@ -173,7 +175,7 @@
             </svg>
           </a>
         </li>
-        <li class="container-item">
+        <li class="socials-item">
           <a href="#">
             <svg
               width="12"
@@ -189,7 +191,7 @@
             </svg>
           </a>
         </li>
-        <li class="container-item">
+        <li class="socials-item">
           <a href="#">
             <svg
               width="20"
@@ -208,10 +210,9 @@
           </a>
         </li>
       </ul>
-      <p>
+      <p class="copyright">
         Website by
-        <a href="https://htmlacademy.ru"
-          >.HTML academy
+        <a href="https://htmlacademy.ru">
           <svg
             width="115"
             height="34"
@@ -265,6 +266,13 @@
                 d="M109.441 27.0477L105.801 18.1697H103.553L108.392 29.7368L108.371 29.7794C108.028 30.6544 107.643 30.9745 106.701 30.9745H104.196V33.0019H106.701C108.542 33.0019 109.527 32.1696 110.212 30.3769L114.88 18.1697H112.803L109.441 27.0477Z"
                 fill="black"
               />
+            </g>
+            <defs>
+              <clipPath id="clip0">
+                <rect width="115" height="33.0294" fill="white" />
+              </clipPath>
+            </defs></svg></a>
+      </p>
             </g>
             <defs>
               <clipPath id="clip0">

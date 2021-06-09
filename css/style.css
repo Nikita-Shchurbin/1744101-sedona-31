@@ -28,9 +28,18 @@ body {
   text-transform: uppercase;
   background-color: var(--basic-extra-white);
   list-style: none;
+  min-height: 100%;
+  display: grid;
+  grid-template-rows: min-content 1fr min-content;
+  align-content: start;
 }
 a {
   text-decoration: none;
+}
+.main-header-logo{
+  order: 0;
+  justify-self: center;
+
 }
 .main-navigation a {
   font-size: 14px;
@@ -39,10 +48,22 @@ a {
   font-weight: 700;
 }
 .main-navigation {
+  display: grid;
+  justify-content: stretch;
   color: var(--basic-black);
+}
+.main-site-navigation{
+
+  width: 1200px;
+margin: 0 auto;
+padding: 0 10px;
 }
 .site-navigation{
   list-style: none;
+  display: grid;
+  background-color: var(--basic-white);
+  margin: 0;
+  padding: 0;
 }
 .site-navigation a.is-active {
   color: var(--basic-brown-light);
@@ -56,8 +77,6 @@ color:var(--basic-black);
 .site-navigation a:active {
 color: var(--basic-brown-light);
 }
-
-
 .country {
   text-align: center;
 }
@@ -85,9 +104,21 @@ color: var(--basic-brown-light);
 }
 .features {
   text-align: center;
+  margin-bottom: 82px;
+}
+.features-item{
+  text-align: center;
+}
+.features-item p{
+  margin: 0 10px;
 }
 .features-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 124px;
   list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 .features h3 {
   font-size: 21px;
@@ -100,9 +131,16 @@ color: var(--basic-brown-light);
 }
 .story-list {
   list-style: none;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  column-gap: 168px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
 }
 .story-item {
   text-align: center;
+  margin: 0 10px;
 }
 .story h3 {
   font-size: 21px;
@@ -134,25 +172,41 @@ color: var(--basic-brown-light);
 }
 
 .hashtag {
+  margin: 0;
+  width: 166px;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
 }
 .phone {
+  margin: 0;
+  width: 200px;
   color: inherit;
   font-size: 21px;
   line-height: 26px;
   font-weight: 700;
 }
 .socials {
+  margin: 0;
+  width: 144px;
+  justify-self: center;
   list-style: none;
   font-size: 21px;
   line-height: 26px;
   background-color: var(--basic-blue);
 }
 .copyright {
+  margin: 0;
+  width: 189px;
+  justify-self: end;
   font-size: 14px;
   line-height: 26px;
+}
+.footer{
+  padding: 120px;
+  margin-top: 473px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 .life {
   font-size: 16px;

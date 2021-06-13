@@ -41,7 +41,7 @@ body {
   align-content: start;
 }
 .container {
-  width: 1260px;
+  width: 1230px;
   margin: 0 auto;
   padding: 0 15px;
 }
@@ -91,14 +91,16 @@ color:var(--basic-black);
 .site-navigation a:active {
 color: var(--basic-brown-light);
 }
+.reason-item{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+}
 .reason-info {
   text-align: left;
-  display: grid;
-
+  grid-column: 2/ -1;
   }
   .reason-img {
-  display: grid;
-  grid-template-columns: 1fr 3fr;
+  grid-column: 1/ -1;
     }
 .reason-title {
   font-size: 21px;
@@ -170,12 +172,18 @@ color: var(--basic-brown-light);
   text-align: center;
   margin: 0 10px;
 }
-.story h3 {
+.story{
+  text-align: center;
+  margin-bottom: 82px;
+
+}
+.story-subtitle {
   font-size: 21px;
   line-height: 21px;
   font-weight: 700;
+
 }
-.story p {
+.story-text {
   font-size: 14px;
   line-height: 21px;
 }

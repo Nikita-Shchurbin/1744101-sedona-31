@@ -165,6 +165,7 @@ color: var(--basic-brown-light);
 .story-features {
   display: grid;
   grid-column: 1 / -1 ;
+  background-color: #eeeeee;
 }
 .story-name {
   text-align: center;

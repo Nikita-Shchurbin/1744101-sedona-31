@@ -328,20 +328,28 @@ background-color: var(--basic-white);
   grid-column: 2 / -1 ;
 }
 .filter-price {
-  margin-bottom: 0 auto;
+
+  display: grid;
+  grid-column: 3 / 4 ;
 }
 .product-item {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   list-style-type: none;
+  border-bottom: ;
   margin: 0;
   padding: 0;
 }
-.button-amara {
-display: grid;
-grid-column: 2/ -3;
-}
-.amara-name {
+.img {
   display: grid;
-  grid-column: 2/ -4; 
+  grid-column: 1/ -4;
+}
+.center {
+  display: grid;
+  grid-column: 2/ -2;
+
+}
+.rating {
+  display: grid;
+  grid-column: 3/ -2;
 }

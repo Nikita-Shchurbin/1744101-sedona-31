@@ -314,7 +314,6 @@ background-color: var(--basic-white);
   grid-column: 1/ -4;
 }
 .filter {
-  display: grid;
   grid-column: 1 / -1 ;
 }
 .filter-item {
@@ -324,32 +323,26 @@ background-color: var(--basic-white);
 }
 .filter-sorting {
   margin-bottom: 0 30px;
-  display: grid;
   grid-column: 2 / -1 ;
 }
 .filter-price {
-
-  display: grid;
   grid-column: 3 / 4 ;
 }
 .product-item {
   display: grid;
-  grid-template-columns: auto auto 1fr;
+  grid-template-columns: auto 1fr 1fr;
   list-style-type: none;
   margin: 0;
   padding: 0;
 }
 .img {
-  display: grid;
+  margin: auto;
   grid-column: 1/ -4;
 }
 .center {
-  
-  display: grid;
   grid-column: 2/ -2;
-
+padding-left: 30px;
 }
 .rating {
-  display: grid;
   grid-column: 3/ -2;
 }

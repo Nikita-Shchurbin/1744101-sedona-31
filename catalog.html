@@ -26,8 +26,9 @@
       </nav>
     </div>
     </header>
-    <main>
-      <form action="https://echo.htmlacademy.ru/">
+    <main class="container">
+      <form class="choice" action="https://echo.htmlacademy.ru/">
+        <div class="categories">
         <fieldset class="life">
           <legend class="infrastructure">Инфраструктура:</legend>
           <ul class="life-list">
@@ -50,6 +51,8 @@
             </li>
           </ul>
         </fieldset>
+      </div>
+        <div class="type-life">
         <fieldset class="life">
           <legend>Тип жилья:</legend>
           <ul class="life-list">
@@ -72,31 +75,32 @@
             </li>
           </ul>
         </fieldset>
-        <div class="filter">
+      </div>
+        <div class="price">
           <h3>Стоимость в сутки, ₽</h3>
-          <div class="filter">
+          <div class="price-direction">
             <input type="number" name="min" placeholder="от 0" />
             <input type="number" name="max" placeholder="до 3000" />
           </div>
           <input type="range" id="price" name="price" min="0" max="3000" />
+          <button class="button-price" type="submit">Показать</button>
         </div>
-        <button class="button-filter" type="submit">Показать</button>
+
       </form>
-      <div class="filter">
-        <ul class="filter-list">
-          <li class="filter-item">
-            <h2 class="filter-search">Найдено: 3</h2>
-            <p class="filter-sorting">Сортировка:</p>
-            <a class="filter-price">По цене</a>
-            <a class="filter-type">По типу</a>
-            <a class="filter-raiting">По рейтингу</a>
-          </li>
-        </ul>
-      </div>
+      <div class="sorting">
+            <p class="sorting-search">Найдено: 3</p>
+            <div>
+            <p class="sorting-title">Сортировка:</p>
+            <ul class="sorting-list">
+              <li class="sorting-item">По цене</li>
+              <li class="sorting-item">По типу</li>
+              <li class="sorting-item">По рейтингу</li>
+            </ul>
+            </div>
       <section class="product">
         <ul class="product-list">
           <li class="product-item">
-            <div class="img">
+            <div class="product-img">
             <a class="img-amara"
               ><img
                 src="img/amararesort.jpg"
@@ -105,19 +109,23 @@
                 alt="Гостиница Amara Resort &amp; Spa"
             /></a>
           </div>
-          <div class="center">
-            <h3 class="amara">Amara Resort & Spa</h3>
+          <div class="description">
+            <h3 class="hotel">Amara Resort & Spa</h3>
+            <div>
               <p>Гостиница</p>
               <p>От 4000 ₽</p>
-              <a class="button-primary">Подробнее</a>
-              <a class="button-secondary">Забронировать</a>
             </div>
-            <div class="rating">
-              <p class="rating">Рейтинг: 8,5</p>
+            <div>
+              <a class="button button-primary">Подробнее</a>
+              <a class="button button-secondary">Забронировать</a>
+            </div>
+            </div>
+            <div class="product-rating">
+              <p class="product-rating-main">Рейтинг: 8,5</p>
             </div>
           </li>
           <li class="product-item">
-            <div class="img">
+            <div class="product-img">
             <a
               ><img
                 src="img/desertquail.jpg"
@@ -126,19 +134,21 @@
                 alt="Мотель Desert Quail Inn"
             /></a>
           </div>
-          <div class="center">
-            <h3 class="desert">Desert Quail Inn</h3>
+          <div class="description">
+            <h3 class="motel">Desert Quail Inn</h3>
+            <div>
               <p>Мотель</p>
               <p>От 3000 ₽</p>
-              <a class="button-primary">Подробнее</a>
-              <a class="button-secondary">Забронировать</a>
             </div>
-            <div class="rating">
-              <p class="rating">Рейтинг: 8,9</p>
+              <a class="button button-primary">Подробнее</a>
+              <a class="button button-secondary">Забронировать</a>
+            </div>
+            <div class="product-rating">
+              <p class="product-rating-main">Рейтинг: 8,9</p>
             </div>
           </li>
           <li class="product-item">
-            <div class="img">
+            <div class="product-img">
             <a
               ><img
                 src="img/villasatpoco.jpg"
@@ -147,15 +157,19 @@
                 alt="Апартаменты Villas at Poco Diablo"
             /></a>
           </div>
-          <div class="center">
-            <h3 class="villas">Villas at Poco Diablo</h3>
+          <div class="description">
+            <h3 class="appartament">Villas at Poco Diablo</h3>
+            <div>
               <p class="villas-appartament">Апартаменты</p>
               <p class="villas-price">От 2000 ₽</p>
-              <a class="button-primary">Подробнее</a>
-              <a class="button-secondary">Забронировать</a>
             </div>
-            <div class="rating">
-              <p class="rating">Рейтинг: 9,2</p>
+            <div>
+              <a class="button button-primary">Подробнее</a>
+              <a class="button button-secondary">Забронировать</a>
+            </div>
+            </div>
+            <div class="product-rating">
+              <p class="product-rating-main">Рейтинг: 9,2</p>
             </div>
           </li>
         </ul>

@@ -311,14 +311,26 @@ background-color: var(--basic-white);
   grid-template-columns: 326px 326px auto;
 }
 
-.life {
+.information {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
   border: 0;
   margin: 0;
 }
-.life-list {
+.information-list {
   grid-column: 1/ -4;
+  list-style: none;
+  padding-left: 10px;
+}
+.advantages {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
+}
+.place {
+  font-size: 16px;
+  line-height: 21px;
+  font-weight: 700;
 }
 
 }
@@ -337,9 +349,6 @@ background-color: var(--basic-white);
 .product-item {
   display: grid;
   grid-template-columns: 135px 1fr 135px;
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
 }
 .product-list {
   list-style: none;
@@ -348,7 +357,7 @@ background-color: var(--basic-white);
 .sorting-item {
   list-style: none;
 }
-.product-img {
+.product {
   margin: auto;
   grid-column: 1/ -4;
 }

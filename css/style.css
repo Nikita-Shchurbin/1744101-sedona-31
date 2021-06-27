@@ -51,9 +51,8 @@ body {
 a {
   text-decoration: none;
 }
-.main-header-logo{
-  order: 0;
-  justify-self: center;
+.main-header-logo {
+  justify-content: center;
 
 }
 .main-navigation a {
@@ -63,13 +62,15 @@ a {
   font-weight: 700;
 }
 .main-navigation {
-  justify-content: stretch;
+  display: flex;
+  justify-content: space-around;
   color: var(--basic-black);
 }
 .site-navigation{
+  justify-content: space-around;
   list-style: none;
-  display: grid;
   background-color: var(--basic-white);
+  width: 1200px;
   margin: 0;
   padding: 0;
 }
@@ -374,4 +375,15 @@ padding-left: 30px;
   margin-top: 0px;
   margin-bottom: 0px;
   display: inline-block;
+}
+.central {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.reason-box {
+  display:flex;
+  flex-direction: column;
+  margin: auto;
+  width: 470px;
 }

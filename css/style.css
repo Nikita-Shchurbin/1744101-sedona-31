@@ -415,7 +415,6 @@ background-color: var(--basic-white);
   margin-left: 40px;
 }
 .sorting-item {
-  list-style: none;
   padding-right: 32px;
 }
 .sorting-list:hover{

@@ -356,8 +356,9 @@ background-color: var(--basic-white);
 .choice {
   display: grid;
   grid-template-columns: 326px 326px auto;
+  margin-left: 73px;
+  margin-top: 26px;
 }
-
 .information {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -370,31 +371,29 @@ background-color: var(--basic-white);
   padding-left: 10px;
 }
 .advantages {
+  display: flex;
+  flex-direction:column ;
+  justify-content: space-between;
   font-size: 16px;
   line-height: 21px;
   font-weight: 700;
 }
 .place {
+  display: flex;
+  flex-direction:column;
   font-size: 16px;
   line-height: 21px;
   font-weight: 700;
 }
-
-.filter-item {
-  display: grid;
-  grid-template-columns: 170px 150px 100px 100px 100px;
-  list-style-type: none;
-}
-.filter-sorting {
-  margin-bottom: 0 30px;
-  grid-column: 2 / -1 ;
-}
-.filter-price {
-  grid-column: 3 / 4 ;
+.price {
+  display: flex;
+  flex-direction:column ;
+  align-items: center;
 }
 .product-item {
   display: grid;
   grid-template-columns: 135px 1fr 135px;
+  padding-top: 61px;
 }
 .product-list {
   list-style: none;
@@ -402,12 +401,31 @@ background-color: var(--basic-white);
 }
 .sorting {
   display: flex;
+  margin-left: 73px;
+}
+.sorting-serach {
+  display: flex;
+}
+.sorting-title {
+  display: flex;
+  margin-left: 46px;
 }
 .sorting-list {
   display: flex;
+  margin-left: 40px;
 }
 .sorting-item {
   list-style: none;
+  padding-right: 32px;
+}
+.sorting-list:hover{
+  color: var(--basic-blue);
+}
+.sorting-list:focus {
+  color: var(--basic-blue);
+}
+.sorting-list:active {
+  color: var(--basic-black;)
 }
 .product {
   margin: auto;
@@ -415,6 +433,18 @@ background-color: var(--basic-white);
 }
 .description {
 padding-left: 30px;
+}
+.description p {
+  margin-right: 34px;
+}
+.description-title:hover{
+  color: var(--basic-light-blue);
+}
+.description-title:focus {
+  color: var(--basic-blue);
+}
+.description-title:active{
+  color: var(--basic-extra-brown);
 }
 .product h3 {
   margin-top: -7px;
@@ -424,6 +454,12 @@ padding-left: 30px;
   margin-top: 0px;
   margin-bottom: 0px;
   display: inline-block;
+}
+.product-item {
+  margin-right: 26px;
+}
+.product-list {
+  margin-top: 62px;
 }
 .central {
   display: flex;

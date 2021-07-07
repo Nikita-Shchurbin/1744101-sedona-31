@@ -33,7 +33,6 @@
     <main class="container">
       <h1 class="visually-hidden">Седона</h1>
       <div class="central">
-
       <img src="img/welcome.svg" alt="welcome" />
       <img src="img/tothegorgeous.svg" alt="tothegorgeous" />
       <img src="img/sedona.svg" alt="sedona" />
@@ -181,9 +180,56 @@
               предложения гостиниц в седоне
             </p>
             <button class="button" type="button">Поиск гостиницы в седоне</button>
-            <!--Здесь будет карта!-->
 </section>
         </main>
+        <section class="booking-window" >
+          <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
+          <form action="https://echo.htmlacademy.ru/" method="post">
+            <p>
+              <label for="appointment-arrival-date">Дата заезда:</label>
+              <input
+                id="appointment-arrival-date"
+                type="text"
+                name="arrival-date"
+                placeholder="24 апреля 2017"
+              />
+            </p>
+            <p>
+              <label for="appointment-departure-date">Дата выезда:</label>
+              <input
+                id="appointment-departure-date"
+                type="text"
+                name="departure-date"
+                placeholder="04 июля 2017"
+              />
+            </p>
+            <p>
+              <label for="appointment-adult">взрослые</label>
+              <button type="button">-</button>
+              <input
+                id="appointment-adult"
+                type="text"
+                name="adult"
+                placeholder="2"
+              />
+              <button type="button">+</button>
+            </p>
+            <p>
+              <label for="appointment-children">дети</label>
+              <button type="button">-</button>
+              <input
+                id="appointment-children"
+                type="text"
+                name="children"
+                placeholder="0"
+              />
+    
+              <button type="button">+</button>
+            </p>
+            <button type="submit">Найти</button>
+          </form>
+        </section>
+          <!--Здесь будет карта!-->
     <footer class="footer">
       <div class="container">
         <div class="footer-row">
@@ -311,52 +357,5 @@
       </div>
 
     </footer>
-    <section hidden>
-      <h2>Поиск гостиницы в Седоне</h2>
-      <form action="https://echo.htmlacademy.ru/" method="post">
-        <p>
-          <label for="appointment-arrival-date">Дата заезда:</label>
-          <input
-            id="appointment-arrival-date"
-            type="text"
-            name="arrival-date"
-            placeholder="24 апреля 2017"
-          />
-        </p>
-        <p>
-          <label for="appointment-departure-date">Дата выезда:</label>
-          <input
-            id="appointment-departure-date"
-            type="text"
-            name="departure-date"
-            placeholder="04 июля 2017"
-          />
-        </p>
-        <p>
-          <label for="appointment-adult">взрослые</label>
-          <button type="button">-</button>
-          <input
-            id="appointment-adult"
-            type="text"
-            name="adult"
-            placeholder="2"
-          />
-          <button type="button">+</button>
-        </p>
-        <p>
-          <label for="appointment-children">дети</label>
-          <button type="button">-</button>
-          <input
-            id="appointment-children"
-            type="text"
-            name="children"
-            placeholder="0"
-          />
-
-          <button type="button">+</button>
-        </p>
-        <button type="submit">Найти</button>
-      </form>
-    </section>
   </body>
 </html>

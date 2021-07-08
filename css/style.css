@@ -56,6 +56,7 @@ a {
   position: absolute;
   left: 50%;
   transform: translateX(-50%);
+  z-index: 1;
 }
 .main-navigation a {
   font-size: 14px;
@@ -76,10 +77,14 @@ a {
   background-color: var(--basic-white);
   margin: 0;
   padding: 15px 0;
+
 }
 .site-navigation a {
   display: block;
-  padding:25px 20px;
+  position: relative; 
+  padding: 0 15px;
+  padding-right: 50px;
+
 }
 .site-navigation a.is-active {
   color: var(--basic-brown-light);
@@ -339,6 +344,8 @@ background-color: var(--basic-white);
   color: #666666;
 }
 .button {
+  width: 568px;
+  height: 86px;
   font-weight: 700;
   color: #ffffff;
 }
@@ -512,8 +519,11 @@ padding-left: 30px;
   left: 0;
   font-weight: 700;
   text-align: left;
+  width: 1199px;
+  height: 594px;
   background-color: var(--basic-white);
   background-image: url(../img/map.jpg);
+  background-repeat: no-repeat;
 }
 .booking-window input {
   height: 35px;
@@ -522,4 +532,56 @@ padding-left: 30px;
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
+}
+.date {
+  min-height: 38px;
+  margin-left: auto;
+  border: 0;
+  margin-bottom: 30px;
+  padding: 0 15px;
+  background-color: #f2f2f2;
+  text-transform: uppercase;
+  width: 346px;
+  height: 38px;
+  color: var(--basic-black);
+}
+.child {
+  width: 114px;
+  height: 38px;
+}
+.window-search {
+  justify-content: center;
+  padding-left: 155px;
+  padding: 17px;
+  width: 100%;
+  background-color: #81b3d2;
+  font-size: 21px;
+  text-transform: uppercase;
+  color:#ffffff;
+  border: 0;
+}
+.date-text {
+  line-height: 38px;
+}
+.booking-model {
+  position: absolute;
+  z-index: 1;
+  left: 50%;
+  margin-left: -284px;
+  background-color: #ffffff;
+  width: 568px;
+  height: 395px;
+  padding: 55px;
+}
+.booking-model p {
+  display: flex;
+  justify-content: space-between;
+}
+.booking-container {
+display: flex;
+justify-content: space-between;
+}
+.booking-child {
+  border: 0;
+flex-wrap: wrap;
 }

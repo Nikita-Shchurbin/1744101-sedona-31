@@ -184,40 +184,39 @@
         </main>
         <section class="booking-window" >
           <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
-          <form action="https://echo.htmlacademy.ru/" method="post">
-            <p>
-              <label for="appointment-arrival-date">Дата заезда:</label>
-              <input
+          <form class="booking-model" action="https://echo.htmlacademy.ru/" method="post">
+            <p class="booking-container">
+              <label class="date-text" for="appointment-arrival-date">Дата заезда:</label>
+              <input class="date"
                 id="appointment-arrival-date"
                 type="text"
                 name="arrival-date"
                 placeholder="24 апреля 2017"
               />
             </p>
-            <p>
-              <label for="appointment-departure-date">Дата выезда:</label>
-              <input
+            <p class="booking-container">
+              <label class="date-text" for="appointment-departure-date">Дата выезда:</label>
+              <input class="date"
                 id="appointment-departure-date"
                 type="text"
                 name="departure-date"
                 placeholder="04 июля 2017"
               />
             </p>
-            <p>
-              <label for="appointment-adult">взрослые</label>
+            <p class="booking-child">
+              <label class="child-text" for="appointment-adult">взрослые</label>
               <button type="button">-</button>
-              <input
+              <input class="child"
                 id="appointment-adult"
                 type="text"
                 name="adult"
                 placeholder="2"
               />
               <button type="button">+</button>
-            </p>
-            <p>
-              <label for="appointment-children">дети</label>
+              
+              <label class="child-text" for="appointment-children">дети</label>
               <button type="button">-</button>
-              <input
+              <input class="child"
                 id="appointment-children"
                 type="text"
                 name="children"
@@ -226,7 +225,7 @@
     
               <button type="button">+</button>
             </p>
-            <button type="submit">Найти</button>
+            <button class="window-search" type="submit">Найти</button>
           </form>
         </section>
           <!--Здесь будет карта!-->

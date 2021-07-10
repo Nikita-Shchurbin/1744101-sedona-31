@@ -14,6 +14,8 @@
   --basic-light-blue:#669EC0;
   --basic-extra-blue:#5496BD;
   --basic-grey:#BDBBBC;
+  --basic-space-grey: #A9A9A9;
+
 }
 
 *,
@@ -72,19 +74,32 @@ a {
 }
 .site-navigation {
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   list-style: none;
   background-color: var(--basic-white);
   margin: 0;
-  padding: 15px 0;
-
+  padding: 15px 70px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 138px 1fr 1fr;
+  grid-gap: 30px;
+}
+.site-map {
+  grid-column: 5/6 ;
+}
+.site-live {
+  grid-column: 6/7;
 }
 .site-navigation a {
   display: block;
   position: relative; 
-  padding: 0 15px;
   padding-right: 50px;
 
+}
+.img-welcome {
+  margin-bottom: 10px;
+}
+.img-gorgeous {
+  margin-bottom: 53px;
 }
 .site-navigation a.is-active {
   color: var(--basic-brown-light);
@@ -343,11 +358,19 @@ background-color: var(--basic-white);
   background-color: #f2f2f2;
   color: #666666;
 }
-.button {
+.button-offer {
   width: 568px;
   height: 86px;
   font-weight: 700;
   color: #ffffff;
+  cursor: pointer;
+  padding: 12px 0;
+  text-align: center;
+  background-color: var(--basic-brown-light);
+  position: relative;
+  font-size: 21px;
+  font-family: "PTSans-Bold","Arial",sans-serif;
+  z-index: 1;
 }
 .button-primary {
   background-color: #81b3d2;
@@ -519,7 +542,7 @@ padding-left: 30px;
   left: 0;
   font-weight: 700;
   text-align: left;
-  width: 1199px;
+  width: 100%;
   height: 594px;
   background-color: var(--basic-white);
   background-image: url(../img/map.jpg);
@@ -532,6 +555,7 @@ padding-left: 30px;
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
+  border: 0;
 }
 .date {
   min-height: 38px;
@@ -545,7 +569,8 @@ padding-left: 30px;
   height: 38px;
   color: var(--basic-black);
 }
-.child {
+.booking-window .child {
+  text-align: center;
   width: 114px;
   height: 38px;
 }
@@ -585,3 +610,60 @@ justify-content: space-between;
   border: 0;
 flex-wrap: wrap;
 }
+.booking-calendar {
+  position: absolute;
+  right: 64px;
+  width: 38px;
+  height: 38px;
+  border: 0;
+  background-color: transparent;
+  outline: 0;
+  fill:var(--basic-space-grey);
+}
+.booking-min {
+  position: absolute;
+  margin-left: 110px;
+  margin-top: -4px;
+  width: 38px;
+  height: 38px;
+  border: 0;
+  background-color: transparent;
+  outline: 0;
+  fill: var(--basic-space-grey);
+}
+.booking-max {
+  position: absolute;
+  width: 38px;
+  height: 38px;
+  border: 0;
+  background-color: transparent;
+  outline: 0;
+  fill: var(--basic-space-grey);
+  margin-left: 185px;
+}
+.booking-minimal {
+  position: absolute;
+  margin-left: 345px;
+  margin-top: -4px;
+  width: 38px;
+  height: 38px;
+  border: 0;
+  background-color: transparent;
+  outline: 0;
+  fill: var(--basic-space-grey);
+}
+.booking-maximum {
+  position: absolute;
+  margin-left: 420px;
+  width: 38px;
+  height: 38px;
+  border: 0;
+  background-color: transparent;
+  outline: 0;
+  fill: var(--basic-space-grey);
+}
+.date:hover{
+  color: var(--basic-extra-white);
+}
+.date:focus {
+  color: var(--basic-white);

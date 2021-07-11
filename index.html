@@ -172,15 +172,16 @@
             </li>
           </ul>
         </div>
-<section class="offer">
+      </section>
+        <section class="offer">
             <h2 class="offer-title">Заинтересовались?</h2>
             <p class="offer-info">
               Укажите предполагаемые даты поездки, и мы покажем вам лучшие
               предложения гостиниц в седоне
             </p>
-            <button class="button-offer" type="button">Поиск гостиницы в седоне</button>
-</section>
-        </main>
+            <button class="button" type="button">Поиск гостиницы в седоне</button>
+
+        </section>
         <section class="booking-window" >
           <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
           <form class="booking-model" action="https://echo.htmlacademy.ru/" method="post">
@@ -235,6 +236,9 @@
             </p>
             <p class="booking-child">
               <label class="child-text" for="appointment-adult">взрослые</label>
+              <button class="absolute count-button count-button-min" type="button"> <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <rect width="12" height="3" fill="#A9A9A9"/>
+                </svg></button>
               </button>
               <input class="child"
                 id="appointment-adult"
@@ -242,45 +246,39 @@
                 name="adult"
                 placeholder="2"
               />
-              <button class="booking-min" type="button">
-                <span class="visually-hidden">Уменьшить</span>
-                <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect width="12" height="3" fill="#A9A9A9"/>
-                  </svg>
-                  <button class="booking-max" type="button">
+                  <button class="absolute count-button count-button-max" type="button">
                     <span class="visually-hidden">Увеличить</span>
                     <svg width="11" height="11" xmlns="http://www.w3.org/2000/svg">
                       <rect x="0" y="4" width="11" height="3"></rect>
                       <rect x="4" y="0" width="3" height="11"></rect>
                     </svg>
                   </button>
-
-                    
-              <label class="child-text" for="appointment-children">дети</label>
+                  <label class="child-text" for="appointment-children">дети</label>
+                  <button class="absolute count-button count-button-min" type="button"> <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <rect width="12" height="3" fill="#A9A9A9"/>
+                    </svg></button>
+              
               <input class="child"
                 id="appointment-children"
                 type="text"
                 name="children"
                 placeholder="0"
               />
-              <button class="booking-minimal" type="button">
-                <span class="visually-hidden">Уменьшить</span>
-                <svg width="12" height="3" viewBox="0 0 12 3" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <rect width="12" height="3" fill="#A9A9A9"/>
-                  </svg>
-                  <button class="booking-maximum" type="button">
-                    <span class="visually-hidden">Увеличить</span>
-                    <svg width="11" height="11" xmlns="http://www.w3.org/2000/svg">
-                      <rect x="0" y="4" width="11" height="3"></rect>
-                      <rect x="4" y="0" width="3" height="11"></rect>
-                    </svg>
-                  </button>
-
+              <button class="absolute count-button count-button-max" type="button">
+                <span class="visually-hidden">Увеличить</span>
+                <svg width="11" height="11" xmlns="http://www.w3.org/2000/svg">
+                  <rect x="0" y="4" width="11" height="3"></rect>
+                  <rect x="4" y="0" width="3" height="11"></rect>
+                </svg>
+              </button>
             </p>
             <button class="window-search" type="submit">Найти</button>
           </form>
         </section>
-          <!--Здесь будет карта!-->
+          <section class="cruise-map">
+            <h1 class="visually-hidden">карта Седоны</h1>
+            <img src="../1744101-sedona-31/img/map.jpg">
+          </section>
     <footer class="footer">
       <div class="container">
         <div class="footer-row">
